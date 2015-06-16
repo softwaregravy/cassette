@@ -159,4 +159,23 @@ NSData *dataForString(NSString *text)
     XCTAssertEqual([[self queueFile] size], 0);
 }
 
+- (void)testForEach
+{
+    NSData *foo = dataForString(@"foo");
+    NSData *bar = dataForString(@"bar");
+    NSData *baz = dataForString(@"baz");
+
+    [self.queueFile add:foo];
+    [self.queueFile add:bar];
+    [self.queueFile add:baz];
+
+
+    __block int called = 0;
+    [self.queueFile forEach:^(NSData *data) {
+      called++;
+      return YES;
+    }];
+    XCTAssertEqual(called, 3);
+}
+
 @end

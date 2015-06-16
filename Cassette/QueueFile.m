@@ -425,6 +425,25 @@ void initialize(NSString *path, NSFileManager *fileManager)
                     count:_first.length];
 }
 
+/** Invokes the given reader once for each element in the queue, from eldest to newest. */
+- (int)forEach:(BOOL (^)(NSData *data))reader
+{
+    int position = _first.position;
+
+    for (int i = 0; i < _elementCount; i++) {
+        Element *current = [self readElement:position];
+        NSData *data = [self ringRead:current.position count:current.length];
+        BOOL shouldContinue = reader(data);
+        if (!shouldContinue) {
+            return i + 1;
+        }
+        position = [self wrapPosition:current.position + ELEMENT_HEADER_LENGTH + current.length];
+    }
+
+    return _elementCount;
+}
+
+
 /** Returns the number of elements in this queue. */
 - (int)size
 {

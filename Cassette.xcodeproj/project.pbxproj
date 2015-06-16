@@ -12,7 +12,6 @@
 		6E126C031B1F816300856CCA /* CassetteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E126C021B1F816300856CCA /* CassetteTests.m */; };
 		6E126C0E1B1F818100856CCA /* QueueFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E126C0C1B1F818100856CCA /* QueueFile.h */; };
 		6E126C0F1B1F818100856CCA /* QueueFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E126C0D1B1F818100856CCA /* QueueFile.m */; };
-		6FDFD4E5CC1B5272E7D3E851 /* libPods-Cassette.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EFF945EB15F70D72CDE1E /* libPods-Cassette.a */; };
 		79265191FB89DF3527E889C8 /* libPods-CassetteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEEE2185A46AF0AE224324 /* libPods-CassetteTests.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDFD4E5CC1B5272E7D3E851 /* libPods-Cassette.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
