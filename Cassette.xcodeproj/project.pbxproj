@@ -12,6 +12,8 @@
 		6E126C031B1F816300856CCA /* CassetteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E126C021B1F816300856CCA /* CassetteTests.m */; };
 		6E126C0E1B1F818100856CCA /* QueueFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E126C0C1B1F818100856CCA /* QueueFile.h */; };
 		6E126C0F1B1F818100856CCA /* QueueFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E126C0D1B1F818100856CCA /* QueueFile.m */; };
+		6FDFD4E5CC1B5272E7D3E851 /* libPods-Cassette.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0EFF945EB15F70D72CDE1E /* libPods-Cassette.a */; };
+		79265191FB89DF3527E889C8 /* libPods-CassetteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEEE2185A46AF0AE224324 /* libPods-CassetteTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37F6D2B0EEAABF58504CC2B5 /* Pods-CassetteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CassetteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CassetteTests/Pods-CassetteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41C8509061CC788E5DE7F95E /* Pods-CassetteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CassetteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CassetteTests/Pods-CassetteTests.release.xcconfig"; sourceTree = "<group>"; };
+		47E62B5531C2D0836EB459FC /* Pods-Cassette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cassette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cassette/Pods-Cassette.release.xcconfig"; sourceTree = "<group>"; };
 		6E126BF01B1F816200856CCA /* Cassette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cassette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E126BF41B1F816200856CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E126BF51B1F816200856CCA /* Cassette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cassette.h; sourceTree = "<group>"; };
@@ -33,6 +38,9 @@
 		6E126C021B1F816300856CCA /* CassetteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CassetteTests.m; sourceTree = "<group>"; };
 		6E126C0C1B1F818100856CCA /* QueueFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueFile.h; sourceTree = "<group>"; };
 		6E126C0D1B1F818100856CCA /* QueueFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueFile.m; sourceTree = "<group>"; };
+		AB0EFF945EB15F70D72CDE1E /* libPods-Cassette.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cassette.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FEEE2185A46AF0AE224324 /* libPods-CassetteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CassetteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57DE616EA209E3A1D839223 /* Pods-Cassette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cassette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cassette/Pods-Cassette.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDFD4E5CC1B5272E7D3E851 /* libPods-Cassette.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E126BFC1B1F816300856CCA /* Cassette.framework in Frameworks */,
+				79265191FB89DF3527E889C8 /* libPods-CassetteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,8 @@
 				6E126BF21B1F816200856CCA /* Cassette */,
 				6E126BFF1B1F816300856CCA /* CassetteTests */,
 				6E126BF11B1F816200856CCA /* Products */,
+				A31B42205BA12C9FFF2A1BA9 /* Pods */,
+				89B2DFA56F6C322110A00DB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +120,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		89B2DFA56F6C322110A00DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EFF945EB15F70D72CDE1E /* libPods-Cassette.a */,
+				C3FEEE2185A46AF0AE224324 /* libPods-CassetteTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A31B42205BA12C9FFF2A1BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E57DE616EA209E3A1D839223 /* Pods-Cassette.debug.xcconfig */,
+				47E62B5531C2D0836EB459FC /* Pods-Cassette.release.xcconfig */,
+				37F6D2B0EEAABF58504CC2B5 /* Pods-CassetteTests.debug.xcconfig */,
+				41C8509061CC788E5DE7F95E /* Pods-CassetteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,10 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E126C061B1F816300856CCA /* Build configuration list for PBXNativeTarget "Cassette" */;
 			buildPhases = (
+				0D92DF8E29B89EBB07DFA0BD /* Check Pods Manifest.lock */,
 				6E126BEB1B1F816200856CCA /* Sources */,
 				6E126BEC1B1F816200856CCA /* Frameworks */,
 				6E126BED1B1F816200856CCA /* Headers */,
 				6E126BEE1B1F816200856CCA /* Resources */,
+				670A2834243AFC27A5E83DDC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E126C091B1F816300856CCA /* Build configuration list for PBXNativeTarget "CassetteTests" */;
 			buildPhases = (
+				1D44996426A7C6F9BB4503BE /* Check Pods Manifest.lock */,
 				6E126BF71B1F816300856CCA /* Sources */,
 				6E126BF81B1F816300856CCA /* Frameworks */,
 				6E126BF91B1F816300856CCA /* Resources */,
+				D0FB0AA591F2FE0E782AE593 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +246,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D92DF8E29B89EBB07DFA0BD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D44996426A7C6F9BB4503BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		670A2834243AFC27A5E83DDC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cassette/Pods-Cassette-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0FB0AA591F2FE0E782AE593 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CassetteTests/Pods-CassetteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E126BEB1B1F816200856CCA /* Sources */ = {
@@ -329,6 +428,7 @@
 		};
 		6E126C071B1F816300856CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57DE616EA209E3A1D839223 /* Pods-Cassette.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -344,6 +444,7 @@
 		};
 		6E126C081B1F816300856CCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E62B5531C2D0836EB459FC /* Pods-Cassette.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -359,6 +460,7 @@
 		};
 		6E126C0A1B1F816300856CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F6D2B0EEAABF58504CC2B5 /* Pods-CassetteTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -376,6 +478,7 @@
 		};
 		6E126C0B1B1F816300856CCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C8509061CC788E5DE7F95E /* Pods-CassetteTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -406,6 +509,7 @@
 				6E126C081B1F816300856CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E126C091B1F816300856CCA /* Build configuration list for PBXNativeTarget "CassetteTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +518,7 @@
 				6E126C0B1B1F816300856CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

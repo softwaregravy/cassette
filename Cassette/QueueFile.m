@@ -1,11 +1,3 @@
-//
-//  QueueFile.m
-//  Cassette
-//
-//  Created by Prateek Srivastava on 2015-06-03.
-//  Copyright (c) 2015 Segment. All rights reserved.
-//
-
 #import "QueueFile.h"
 
 /** Initial file size in bytes. */
@@ -480,7 +472,8 @@ void initialize(NSString *path, NSFileManager *fileManager)
         newFirstPosition = [self
             wrapPosition:newFirstPosition + ELEMENT_HEADER_LENGTH + newFirstLength];
         NSData *buffer =
-            [self ringRead:newFirstPosition count:ELEMENT_HEADER_LENGTH];
+            [self ringRead:newFirstPosition
+                     count:ELEMENT_HEADER_LENGTH];
         newFirstLength = readInt(buffer, 0);
     }
 

@@ -1,11 +1,3 @@
-//
-//  CassetteTests.m
-//  CassetteTests
-//
-//  Created by Prateek Srivastava on 2015-06-03.
-//  Copyright (c) 2015 Segment. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "QueueFile.h"
